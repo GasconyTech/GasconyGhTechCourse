@@ -1,0 +1,300 @@
+/**
+ * Error Handler Module
+ * Manages custom error loading feature with user-friendly messaging and refresh functionality
+ */
+
+(function() {
+    'use strict';
+
+    // Error modal HTML structure
+    const errorModalHTML = `
+        <div id="errorModal" class="error-modal" style="display: none;">
+            <div class="error-modal-content">
+                <div class="error-modal-header">
+                    <h2>⚠️ Oops! Something Went Wrong</h2>
+                </div>
+                <div class="error-modal-body">
+                    <p>We're sorry, but something unexpected happened while loading the page.</p>
+                    <p>Please try refreshing the page to continue.</p>
+                </div>
+                <div class="error-modal-footer">
+                    <button id="refreshBtn" class="error-refresh-btn">🔄 Refresh Page</button>
+                    <button id="closeErrorBtn" class="error-close-btn">✕ Close</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Error modal styles
+    const errorModalStyles = `
+        #errorModal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .error-modal-content {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 90%;
+            padding: 40px;
+            text-align: center;
+            animation: slideUp 0.3s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        body.dark-mode .error-modal-content {
+            background-color: #2a2a2a;
+            color: #e0e0e0;
+        }
+
+        .error-modal-header {
+            margin-bottom: 20px;
+        }
+
+        .error-modal-header h2 {
+            font-size: 24px;
+            color: #ff6b6b;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        body.dark-mode .error-modal-header h2 {
+            color: #ff8787;
+        }
+
+        .error-modal-body {
+            margin-bottom: 30px;
+        }
+
+        .error-modal-body p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+            margin: 10px 0;
+        }
+
+        body.dark-mode .error-modal-body p {
+            color: #b0b0b0;
+        }
+
+        .error-modal-footer {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .error-refresh-btn,
+        .error-close-btn {
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .error-refresh-btn {
+            background-color: #6b7ff5;
+            color: white;
+        }
+
+        .error-refresh-btn:hover {
+            background-color: #5a6dd4;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(107, 127, 245, 0.4);
+        }
+
+        .error-close-btn {
+            background-color: #e0e0e0;
+            color: #333333;
+        }
+
+        body.dark-mode .error-close-btn {
+            background-color: #3a3a3a;
+            color: #e0e0e0;
+        }
+
+        .error-close-btn:hover {
+            background-color: #d0d0d0;
+            transform: translateY(-2px);
+        }
+
+        body.dark-mode .error-close-btn:hover {
+            background-color: #4a4a4a;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .error-modal-content {
+                padding: 30px 20px;
+                width: 95%;
+            }
+
+            .error-modal-header h2 {
+                font-size: 20px;
+            }
+
+            .error-modal-body p {
+                font-size: 14px;
+            }
+
+            .error-refresh-btn,
+            .error-close-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+                width: 100%;
+            }
+
+            .error-modal-footer {
+                flex-direction: column;
+            }
+        }
+    `;
+
+    /**
+     * Initialize error handler
+     */
+    function initErrorHandler() {
+        // Add error modal HTML to the page
+        const errorContainer = document.createElement('div');
+        errorContainer.innerHTML = errorModalHTML;
+        document.body.appendChild(errorContainer);
+
+        // Add error modal styles
+        const styleElement = document.createElement('style');
+        styleElement.textContent = errorModalStyles;
+        document.head.appendChild(styleElement);
+
+        // Get modal elements
+        const errorModal = document.getElementById('errorModal');
+        const refreshBtn = document.getElementById('refreshBtn');
+        const closeErrorBtn = document.getElementById('closeErrorBtn');
+
+        // Refresh button functionality
+        refreshBtn.addEventListener('click', function() {
+            location.reload();
+        });
+
+        // Close button functionality
+        closeErrorBtn.addEventListener('click', function() {
+            errorModal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside of it
+        errorModal.addEventListener('click', function(event) {
+            if (event.target === errorModal) {
+                errorModal.style.display = 'none';
+            }
+        });
+
+        // Global error handler
+        window.addEventListener('error', function(event) {
+            console.error('Error caught:', event.error);
+            showErrorModal();
+        });
+
+        // Handle unhandled promise rejections
+        window.addEventListener('unhandledrejection', function(event) {
+            console.error('Unhandled promise rejection:', event.reason);
+            showErrorModal();
+        });
+
+        // Monitor resource loading errors
+        window.addEventListener('load', function() {
+            // Check if critical resources failed to load
+            const images = document.querySelectorAll('img');
+            let failedResources = 0;
+
+            images.forEach(img => {
+                if (!img.complete || img.naturalHeight === 0) {
+                    failedResources++;
+                }
+            });
+
+            // If too many resources failed, show error
+            if (failedResources > 0 && failedResources / images.length > 0.5) {
+                console.warn('Multiple resources failed to load');
+            }
+        });
+
+        // Performance monitoring
+        if (window.performance && window.performance.timing) {
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    const perfData = window.performance.timing;
+                    const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+                    console.log('Page load time:', pageLoadTime, 'ms');
+                }, 0);
+            });
+        }
+    }
+
+    /**
+     * Show error modal
+     */
+    function showErrorModal() {
+        const errorModal = document.getElementById('errorModal');
+        if (errorModal) {
+            errorModal.style.display = 'flex';
+        }
+    }
+
+    /**
+     * Hide error modal
+     */
+    function hideErrorModal() {
+        const errorModal = document.getElementById('errorModal');
+        if (errorModal) {
+            errorModal.style.display = 'none';
+        }
+    }
+
+    /**
+     * Expose public API
+     */
+    window.ErrorHandler = {
+        show: showErrorModal,
+        hide: hideErrorModal,
+        init: initErrorHandler
+    };
+
+    // Initialize error handler when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initErrorHandler);
+    } else {
+        initErrorHandler();
+    }
+})();
+

@@ -1,0 +1,3117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for Performance and Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gascony Gh Tech Course - Online Learning Platform">
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles.min.css" as="style">
+    <link rel="preload" href="script.min.js" as="script">
+    <link rel="preload" href="error-handler.min.js" as="script">
+    
+    <!-- DNS Prefetch for External Resources -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    
+    <!-- Preconnect to External Domains -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <title>Gascony Gh Tech Course - Online Learning Platform</title>
+    
+    <!-- Optimized External Stylesheets with Async Loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    
+    <!-- Minified CSS -->
+    <link rel="stylesheet" href="styles.min.css">
+    
+    <!-- Inline Critical CSS for above-the-fold content -->
+    <style>
+        html{scroll-behavior:smooth}*{margin:0;padding:0;box-sizing:border-box}:root{--gold:#d4a574;--blue:#6b7ff5;--dark-bg:#0a0a0a;--white:#fff;--light-gray:#f5f5f5;--text-dark:#333;--text-light:#666;--card-bg:#fff;--border-color:#e0e0e0;--text-color:#333;--text-secondary:#666;--primary-color:#6b7ff5;--bg-color:#f9f9f9;--bg-secondary:#f0f2f5}body.dark-mode{--card-bg:#2a2a2a;--border-color:#3a3a3a;--text-color:#fff;--text-secondary:#b0b0b0;--bg-color:#1a1a1a;--bg-secondary:#202020}body{font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;line-height:1.6;color:var(--text-dark);background-color:var(--white);transition:background-color .3s ease,color .3s ease}body.dark-mode{background-color:#1a1a1a;color:#e0e0e0}header{background-color:var(--white);padding:20px 0;position:sticky;top:0;z-index:999;box-shadow:0 2px 10px rgba(0,0,0,.1)}body.dark-mode header{background-color:#1a1a1a;box-shadow:0 2px 10px rgba(255,255,255,.1)}.container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
+</head>
+<body class="dark-mode">
+    <!-- Gold Borders -->
+    <div class="gold-border gold-border-left"></div>
+    <div class="gold-border gold-border-right"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon"><img src="GasconyGhTechlogo.png" alt="Gascony Gh Tech Course Logo"></div>
+                <div class="logo-text">
+                    <div class="logo-main">Gascony Gh</div>
+                    <div class="logo-sub">Tech Course</div>
+                </div>
+            </div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#course">Course</a>
+                <a href="#ebook">E-Book</a>
+                <a href="#news">Tech News</a>
+                
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#privacy">Privacy & Policy</a>
+            </nav>
+            <div class="header-icons">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <!-- Added hamburger menu icon -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="cart-icon">
+                    🛒
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </div>
+                <div class="user-icon">👤</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Adding Student Dashboard Section -->
+    <!-- Student Dashboard -->
+    <section class="dashboard" id="dashboardSection">
+        <div class="container">
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+                <div class="dashboard-welcome">
+                    <div>
+                        <h1>Welcome back, Alex!</h1>
+                        <p>Ready to continue your learning journey?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Overview -->
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-value">5</div>
+                    <div class="stat-label">Enrolled Courses</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Completed Courses</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⏳</div>
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">In Progress</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Certificates Earned</div>
+                </div>
+            </div>
+
+            <!-- Learning Progress Chart Section -->
+            <div class="learning-progress-section">
+                <h2>📈 Your Learning Progress</h2>
+                <p class="progress-subtitle">Track your weekly course completion and learning consistency</p>
+                
+                <div class="chart-container">
+                    <canvas id="learningProgressChart"></canvas>
+                </div>
+
+                <div class="chart-stats">
+                    <div class="chart-stat-item">
+                        <div class="chart-stat-value">75%</div>
+                        <div class="chart-stat-label">Average Progress</div>
+                    </div>
+                    <div class="chart-stat-item">
+                        <div class="chart-stat-value">12</div>
+                        <div class="chart-stat-label">Weeks Active</div>
+                    </div>
+                    <div class="chart-stat-item">
+                        <div class="chart-stat-value">42</div>
+                        <div class="chart-stat-label">Lessons Completed</div>
+                    </div>
+                    <div class="chart-stat-item">
+                        <div class="chart-stat-value">8.5/10</div>
+                        <div class="chart-stat-label">Avg. Score</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Added Venn Diagram Section for Student Results -->
+            <!-- Venn Diagram - Skills Distribution -->
+            <div class="venn-diagram-section">
+                <h2>📊 Your Skills Distribution</h2>
+                <p class="venn-subtitle">Visual representation of your competencies across different domains</p>
+                
+                <div class="venn-container">
+                    <svg class="venn-svg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Technical Skills Circle (Left) -->
+                        <circle cx="220" cy="250" r="140" fill="rgba(99, 102, 241, 0.5)" stroke="#6366f1" stroke-width="3" class="venn-circle" data-skill="technical"/>
+                        
+                        <!-- Creative Skills Circle (Right) -->
+                        <circle cx="380" cy="250" r="140" fill="rgba(236, 72, 153, 0.5)" stroke="#ec4899" stroke-width="3" class="venn-circle" data-skill="creative"/>
+                        
+                        <!-- Business Skills Circle (Bottom) -->
+                        <circle cx="300" cy="350" r="140" fill="rgba(251, 191, 36, 0.5)" stroke="#fbbf24" stroke-width="3" class="venn-circle" data-skill="business"/>
+                        
+                        <!-- Labels and Percentages -->
+                        <!-- Technical Skills -->
+                        <text x="150" y="200" class="venn-label" text-anchor="middle">Technical</text>
+                        <text x="150" y="225" class="venn-percentage" fill="#6366f1" text-anchor="middle">45%</text>
+                        
+                        <!-- Creative Skills -->
+                        <text x="450" y="200" class="venn-label" text-anchor="middle">Creative</text>
+                        <text x="450" y="225" class="venn-percentage" fill="#ec4899" text-anchor="middle">30%</text>
+                        
+                        <!-- Business Skills -->
+                        <text x="300" y="460" class="venn-label" text-anchor="middle">Business</text>
+                        <text x="300" y="485" class="venn-percentage" fill="#fbbf24" text-anchor="middle">25%</text>
+                        
+                        <!-- Intersection Labels -->
+                        <text x="300" y="220" class="venn-label" text-anchor="middle" font-size="12" fill="#8b5cf6">Tech + Creative</text>
+                        <text x="240" y="340" class="venn-label" text-anchor="middle" font-size="12" fill="#10b981">Tech + Business</text>
+                        <text x="360" y="340" class="venn-label" text-anchor="middle" font-size="12" fill="#f59e0b">Creative + Business</text>
+                    </svg>
+                    
+                    <div class="venn-tooltip" id="vennTooltip"></div>
+                </div>
+
+                <!-- Legend -->
+                <div class="venn-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgba(99, 102, 241, 0.7);"></div>
+                        <div class="legend-content">
+                            <h4>Technical Skills (45%)</h4>
+                            <p>Web Dev, Python, Data Science, Cybersecurity</p>
+                        </div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgba(236, 72, 153, 0.7);"></div>
+                        <div class="legend-content">
+                            <h4>Creative Skills (30%)</h4>
+                            <p>Digital Marketing, Music Promotion, AI Prompting</p>
+                        </div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: rgba(251, 191, 36, 0.7);"></div>
+                        <div class="legend-content">
+                            <h4>Business Skills (25%)</h4>
+                            <p>Social Media Management, Influencer Marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Main Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- My Courses -->
+                <div class="dashboard-section">
+                    <h2>📖 My Courses</h2>
+                    <div class="my-courses-list">
+                        <!-- Course 1 -->
+                        <div class="dashboard-course-card">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop" alt="Web Development" class="dashboard-course-image">
+                            <div class="dashboard-course-info">
+                                <h3>Complete Web Development Bootcamp</h3>
+                                <div class="course-progress-bar">
+                                    <div class="course-progress-fill" style="width: 75%"></div>
+                                </div>
+                                <p class="course-progress-text">75% Complete - 15 of 20 lessons</p>
+                                <button class="continue-btn">Continue Learning</button>
+                            </div>
+                        </div>
+
+                        <!-- Course 2 -->
+                        <div class="dashboard-course-card">
+                            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=300&fit=crop" alt="Python" class="dashboard-course-image">
+                            <div class="dashboard-course-info">
+                                <h3>Python Programming Masterclass</h3>
+                                <div class="course-progress-bar">
+                                    <div class="course-progress-fill" style="width: 45%"></div>
+                                </div>
+                                <p class="course-progress-text">45% Complete - 9 of 20 lessons</p>
+                                <button class="continue-btn">Continue Learning</button>
+                            </div>
+                        </div>
+
+                        <!-- Course 3 -->
+                        <div class="dashboard-course-card">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Digital Marketing" class="dashboard-course-image">
+                            <div class="dashboard-course-info">
+                                <h3>Complete Digital Marketing Mastery</h3>
+                                <div class="course-progress-bar">
+                                    <div class="course-progress-fill" style="width: 100%"></div>
+                                </div>
+                                <p class="course-progress-text">100% Complete - Course Finished!</p>
+                                <button class="continue-btn">View Certificate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity & Achievements -->
+                <div>
+                    <!-- Recent Activity -->
+                    <div class="dashboard-section" style="margin-bottom: 30px;">
+                        <h2>🔔 Recent Activity</h2>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon">✅</div>
+                                <div class="activity-content">
+                                    <h4>Lesson Completed</h4>
+                                    <p>JavaScript Fundamentals</p>
+                                    <div class="activity-time">2 hours ago</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">🏆</div>
+                                <div class="activity-content">
+                                    <h4>Achievement Unlocked</h4>
+                                    <p>Fast Learner Badge</p>
+                                    <div class="activity-time">1 day ago</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">📝</div>
+                                <div class="activity-content">
+                                    <h4>Assignment Submitted</h4>
+                                    <p>Python Project #3</p>
+                                    <div class="activity-time">2 days ago</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">⭐</div>
+                                <div class="activity-content">
+                                    <h4>Course Enrolled</h4>
+                                    <p>AI Prompting Mastery</p>
+                                    <div class="activity-time">3 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div class="dashboard-section">
+                        <h2>🏆 Achievements</h2>
+                        <div class="achievements-grid">
+                            <div class="achievement-badge">
+                                <div class="achievement-icon">🎓</div>
+                                <div class="achievement-name">Graduate</div>
+                            </div>
+                            <div class="achievement-badge">
+                                <div class="achievement-icon">⚡</div>
+                                <div class="achievement-name">Fast Learner</div>
+                            </div>
+                            <div class="achievement-badge">
+                                <div class="achievement-icon">🔥</div>
+                                <div class="achievement-name">7 Day Streak</div>
+                            </div>
+                            <div class="achievement-badge">
+                                <div class="achievement-icon">💯</div>
+                                <div class="achievement-name">Perfect Score</div>
+                            </div>
+                            <div class="achievement-badge">
+                                <div class="achievement-icon">🌟</div>
+                                <div class="achievement-name">Top Student</div>
+                            </div>
+                            <div class="achievement-badge">
+                                <div class="achievement-icon">📚</div>
+                                <div class="achievement-name">Bookworm</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Basic Coding Quiz Section -->
+    <section class="quiz-section" id="ebookSection">
+        <div class="container">
+            <div class="quiz-header">
+                <h1>Basic Coding Quiz</h1>
+                <p>Test your programming knowledge with these fundamental coding questions</p>
+            </div>
+            <nav class="ebook-nav">
+                <a href="#home">Home</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#course">Course</a>
+                <a href="#ebook">E-Book</a>
+                <a href="#news">Tech News</a>
+                
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#privacy">Privacy & Policy</a>
+            </nav>
+
+            <div class="quiz-container" id="quizContainer">
+                <!-- Question 1 - Multiple Choice -->
+                <!-- Question 1 - Multiple Choice (Retaining original structure for MC, focusing on T/F for new additions) -->
+                <div class="quiz-question" data-question="1">
+                    <div class="question-header">
+                        <span class="question-number">Question 1</span>
+                        <h3>What does HTML stand for?</h3>
+                    </div>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="a">
+                            <span>Hyper Text Markup Language</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="b">
+                            <span>High Tech Modern Language</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="c">
+                            <span>Home Tool Markup Language</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="d">
+                            <span>Hyperlinks and Text Markup Language</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2 - True/False (Enhanced Layout) -->
+                <div class="quiz-question" data-question="2">
+                    <div class="question-header">
+                        <span class="question-number">Question 2</span>
+                        <h3>JavaScript and Java are the same programming language.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q2" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q2" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3 - Multiple Choice -->
+                <div class="quiz-question" data-question="3">
+                    <div class="question-header">
+                        <span class="question-number">Question 3</span>
+                        <h3>Which of the following is used to style web pages?</h3>
+                    </div>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="a">
+                            <span>HTML</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="b">
+                            <span>CSS</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="c">
+                            <span>Python</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="d">
+                            <span>SQL</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4 - True/False (Enhanced Layout) -->
+                <div class="quiz-question" data-question="4">
+                    <div class="question-header">
+                        <span class="question-number">Question 4</span>
+                        <h3>CSS stands for Cascading Style Sheets.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q4" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q4" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5 - Multiple Choice -->
+                <div class="quiz-question" data-question="5">
+                    <div class="question-header">
+                        <span class="question-number">Question 5</span>
+                        <h3>Which symbol is used for single-line comments in JavaScript?</h3>
+                    </div>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="a">
+                            <span>//</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="b">
+                            <span>/* */</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="c">
+                            <span>#</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="d">
+                            <span>--</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 6 - True/False (Enhanced Layout) -->
+                <div class="quiz-question" data-question="6">
+                    <div class="question-header">
+                        <span class="question-number">Question 6</span>
+                        <h3>Python is a compiled programming language.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q6" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q6" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 7 - Multiple Choice -->
+                <div class="quiz-question" data-question="7">
+                    <div class="question-header">
+                        <span class="question-number">Question 7</span>
+                        <h3>What does SQL stand for?</h3>
+                    </div>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q7" value="a">
+                            <span>Structured Query Language</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q7" value="b">
+                            <span>Simple Question Language</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q7" value="c">
+                            <span>Standard Query Language</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q7" value="d">
+                            <span>System Query Language</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 8 - True/False (Enhanced Layout) -->
+                <div class="quiz-question" data-question="8">
+                    <div class="question-header">
+                        <span class="question-number">Question 8</span>
+                        <h3>A variable in programming can store different types of data.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q8" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q8" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 9 - Multiple Choice -->
+                <div class="quiz-question" data-question="9">
+                    <div class="question-header">
+                        <span class="question-number">Question 9</span>
+                        <h3>Which of these is NOT a programming language?</h3>
+                    </div>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q9" value="a">
+                            <span>Python</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q9" value="b">
+                            <span>HTML</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q9" value="c">
+                            <span>Java</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q9" value="d">
+                            <span>C++</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 10 - True/False (Enhanced Layout) -->
+                <div class="quiz-question" data-question="10">
+                    <div class="question-header">
+                        <span class="question-number">Question 10</span>
+                        <h3>An array can store multiple values in a single variable.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q10" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q10" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+
+                <!-- Question 11 - True/False (New) -->
+                <div class="quiz-question" data-question="11">
+                    <div class="question-header">
+                        <span class="question-number">Question 11</span>
+                        <h3>Functions in programming allow you to reuse code and make it more organized.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q11" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q11" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 12 - True/False (New) -->
+                <div class="quiz-question" data-question="12">
+                    <div class="question-header">
+                        <span class="question-number">Question 12</span>
+                        <h3>A loop in programming is used to execute a block of code repeatedly.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q12" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q12" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 13 - True/False (New) -->
+                <div class="quiz-question" data-question="13">
+                    <div class="question-header">
+                        <span class="question-number">Question 13</span>
+                        <h3>The DOM (Document Object Model) represents the structure of an HTML document as a tree.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q13" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q13" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 14 - True/False (New) -->
+                <div class="quiz-question" data-question="14">
+                    <div class="question-header">
+                        <span class="question-number">Question 14</span>
+                        <h3>Git is a version control system used to track changes in code over time.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q14" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q14" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 15 - True/False (New) -->
+                <div class="quiz-question" data-question="15">
+                    <div class="question-header">
+                        <span class="question-number">Question 15</span>
+                        <h3>An API (Application Programming Interface) allows different software applications to communicate with each other.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q15" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q15" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 16 - True/False (New) -->
+                <div class="quiz-question" data-question="16">
+                    <div class="question-header">
+                        <span class="question-number">Question 16</span>
+                        <h3>Object-Oriented Programming (OOP) uses classes and objects to organize code.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q16" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q16" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 17 - True/False (New) -->
+                <div class="quiz-question" data-question="17">
+                    <div class="question-header">
+                        <span class="question-number">Question 17</span>
+                        <h3>A database is a collection of organized data that can be efficiently stored, retrieved, and managed.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q17" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q17" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 18 - True/False (New) -->
+                <div class="quiz-question" data-question="18">
+                    <div class="question-header">
+                        <span class="question-number">Question 18</span>
+                        <h3>Debugging is the process of identifying and fixing errors in code.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q18" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q18" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 19 - True/False (New) -->
+                <div class="quiz-question" data-question="19">
+                    <div class="question-header">
+                        <span class="question-number">Question 19</span>
+                        <h3>Responsive web design ensures that websites look good on all device sizes including mobile, tablet, and desktop.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q19" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q19" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 20 - True/False (New) -->
+                <div class="quiz-question" data-question="20">
+                    <div class="question-header">
+                        <span class="question-number">Question 20</span>
+                        <h3>Recursion is a programming technique where a function calls itself to solve a problem by breaking it into smaller subproblems.</h3>
+                    </div>
+                    <div class="quiz-options true-false-options">
+                        <label class="quiz-option true-option">
+                            <input type="radio" name="q20" value="true">
+                            <span>True</span>
+                        </label>
+                        <label class="quiz-option false-option">
+                            <input type="radio" name="q20" value="false">
+                            <span>False</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="submit-quiz-btn" id="submitQuiz">Submit Quiz</button>
+            </div>
+
+            <!-- Results Section -->
+            <div class="quiz-results" id="quizResults" style="display: none;">
+                <div class="results-header">
+                    <h2>Quiz Results</h2>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <span class="score-number" id="scoreNumber">0</span>
+                            <span class="score-total">/20</span>
+                        </div>
+                        <p class="score-percentage" id="scorePercentage">0%</p>
+                    </div>
+                </div>
+                <div class="results-message" id="resultsMessage"></div>
+                <div class="results-breakdown" id="resultsBreakdown"></div>
+                <button class="retake-quiz-btn" id="retakeQuiz">Retake Quiz</button>
+            </div>
+        </div>
+
+        <!-- Quiz Section Footer -->
+        <footer style="margin-top: 60px;">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- About Section -->
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <div class="footer-logo-icon"><img src="GasconyGhTechlogo.png" alt="Gascony Gh Tech Course Logo"></div>
+                            <div class="footer-logo-text">
+                                <div class="footer-logo-main">Gascony Gh</div>
+                                <div class="footer-logo-sub">Tech Course</div>
+                            </div>
+                        </div>
+                        <p>Empowering learners worldwide with cutting-edge tech education and skills for the digital future.</p>
+                        <div class="social-links">
+                        <a href="https://www.tiktok.com/@gasconyghtech?_r=1&_d=dmc38j6ch0g765..." target="_blank" rel="noopener noreferrer" class="social-link tiktok-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.facebook.com/GasconyGhTech" target="_blank" rel="noopener noreferrer" class="social-link facebook-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link twitter-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/gasconyghtech/" target="_blank" rel="noopener noreferrer" class="social-link instagram-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link linkedin-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://youtube.com/@gasconyghtech?si=-bwPK_1u3G1SXrbh" target="_blank" rel="noopener noreferrer" class="social-link youtube-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#course">Courses</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Courses -->
+                    <div class="footer-section">
+                        <h3>Popular Courses</h3>
+                        <ul class="footer-links">
+                            <li><a href="#web-dev">Web Development</a></li>
+                            <li><a href="#python">Python Programming</a></li>
+                            <li><a href="#data-science">Data Science</a></li>
+                            <li><a href="#digital-marketing">Digital Marketing</a></li>
+                            <li><a href="#ai-prompting">AI Prompting</a></li>
+                            <li><a href="#social-media">Social Media Growth</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact & Newsletter -->
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <span>gasconytech@.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <span>+233 (532) 097-722</span>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <span>123 Tech Street, Digital City</span>
+                            </div>
+                        </div>
+                        <h3 style="margin-top: 25px;">Newsletter</h3>
+                        <form class="newsletter-form" id="quizNewsletterForm">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                            <button type="submit" class="newsletter-btn">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 <a href="#">Gascony Gh Tech Course</a>. All rights reserved. | Designed with ❤️ for learners worldwide</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-curve"></div>
+        <div class="container hero-content">
+            <div class="hero-left">
+                <div class="badge">60% OFF</div>
+                <div class="hero-subtitle">LEARN FROM TODAY</div>
+                <h1>Gascony Gh Tech Course Leads To A Brighter Future.</h1>
+                <p>Education is a vital tool that provides knowledge, skills, and information, helping people understand their rights and responsibilities toward their family, society, and nation. It broadens our perspective and changes how we view the world. Education encourages creativity and innovation, which are values that drive the nation's development.</p>
+                <button class="cta-button" id="getStartedBtn">GET STARTED</button>
+                            <div id="getStartedContent" class="collapsible-content">
+                                <p>Ready to launch your tech career? Our courses are designed for beginners and professionals alike. Click below to explore our full curriculum or start your free coding quiz!</p>
+                        <a href="#course" class="cta-button" style="margin-right: 10px;">Explore Courses</a>
+                                <a href="#ebook" class="cta-button">Start Free Quiz</a>
+                            </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-circle">
+                    <img src="GasconyGhTechlogo.png" alt="Students">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <h3>Over 1000+ Students</h3>
+                <p>We provide online learning program that enable learners to access.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <h3>11 Online Courses</h3>
+                <p>Online education provides flexibility and accessibility to learners.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏛️</div>
+                <h3>Live Time Access</h3>
+                <p>We provide online learning program that enable learners to access.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-content">
+            <div class="about-left">
+                <div class="about-image-shape">
+                    <img src="Gascony Gh Tech.png" alt="Instructor">
+                    <div class="shape shape-plus">+</div>
+                    <div class="shape shape-asterisk">✱</div>
+                    <div class="shape shape-circle-red">●</div>
+                    <div class="shape shape-circle-blue">●</div>
+                    <div class="shape shape-circle-outline">○</div>
+                </div>
+            </div>
+            <div class="about-right">
+                <h2>All In One Education Solution Makes Your Better Skills</h2>
+                <p>Credibly syndicate transparent interfaces and client-focused synergy. Dramatically optimize revolutionary intermediaries virtual functionalities. Monotonectally myocardinate client-based processes before interoperable models prospective.</p>
+                <div class="collapsible-content" id="about-extra-content">
+                    <p>We strive to empower individuals of all ages and backgrounds with the knowledge and skills necessary for success in the modern world.</p>
+                    <p>Our curriculum is meticulously designed by industry experts to ensure relevance and quality. We focus on practical, hands-on learning, preparing our students not just for certification, but for successful careers in technology.</p>
+                </div>
+                <button class="cta-button learn-more-btn" data-target="about-extra-content">LEARN MORE →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Students Say</h2>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces" alt="John Smith" class="testimonial-image">
+                        <div class="testimonial-info">
+                            <h4>John Smith</h4>
+                            <p class="testimonial-course">Web Development Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "The Web Development course completely transformed my career. The instructors are knowledgeable and the hands-on projects gave me real-world experience. I landed my dream job within 3 months of completing the course!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces" alt="Sarah Johnson" class="testimonial-image">
+                        <div class="testimonial-info">
+                            <h4>Sarah Johnson</h4>
+                            <p class="testimonial-course">Digital Marketing Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "I've taken several online courses before, but Gascony Gh Tech Course stands out. The Digital Marketing program is comprehensive, up-to-date, and the support from instructors is exceptional. Highly recommended!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces" alt="Michael Chen" class="testimonial-image">
+                        <div class="testimonial-info">
+                            <h4>Michael Chen</h4>
+                            <p class="testimonial-course">Python Programming Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "As a complete beginner, I was nervous about learning to code. The Python course made everything so clear and easy to understand. The step-by-step approach and practical exercises built my confidence tremendously."
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-66273c2fd55f?w=150&h=150&fit=crop&crop=faces" alt="Emily Rodriguez" class="testimonial-image">
+                        <div class="testimonial-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p class="testimonial-course">Data Science Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "The Data Science course exceeded all my expectations. The curriculum is well-structured, covering everything from basics to advanced topics. The real-world projects helped me build an impressive portfolio!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Courses Section -->
+    <section class="courses" id="course">
+        <div class="container">
+            <h2 class="section-title">Premium Courses</h2>
+            <div class="courses-grid">
+                 <!-- Course 1: Web Development -->
+                <div class="course-card-wrapper" id="web-dev">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Beginner</span>
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop" alt="Web Development Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>Complete Web Development Bootcamp</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">👨‍💻</div>
+                                <span>by Sarah Johnson in Web Development</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$199.00</span>
+                                    <span class="new-price">$49.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-1">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-1" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-1">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-1" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-1">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-1" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Course 2: Python Programming -->
+                <div class="course-card-wrapper" id="python">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Intermediate</span>
+                            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=300&fit=crop" alt="Python Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>Python Programming Masterclass</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">🐍</div>
+                                <span>by Michael Chen in Programming</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$179.00</span>
+                                    <span class="new-price">$39.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-2">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-2" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-2">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-2" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-2">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-2" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Course 3: Data Science -->
+                <div class="course-card-wrapper" id="data-science">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Advanced</span>
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Data Science Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>Data Science & Machine Learning</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">📊</div>
+                                <span>by Dr. Emily Watson in Data Science</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$249.00</span>
+                                    <span class="new-price">$79.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-3">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-3" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-3">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-3" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-3">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-3" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Course 4: Mobile App Development -->
+                <div class="course-card-wrapper">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Intermediate</span>
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop" alt="Mobile Development Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>iOS & Android App Development</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">📱</div>
+                                <span>by James Rodriguez in Mobile Dev</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$189.00</span>
+                                    <span class="new-price">$59.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-4">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-4" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-4">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-4" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-4">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-4" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Course 5: Cybersecurity -->
+                <div class="course-card-wrapper">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Advanced</span>
+                            <img src="Cybersecurity.jpg" alt="Cybersecurity Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>Cybersecurity & Ethical Hacking</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">🔒</div>
+                                <span>by Alex Thompson in Security</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$299.00</span>
+                                    <span class="new-price">$89.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-5">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-5" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-5">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-5" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-5">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-5" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Course 6: Cloud Computing -->
+                <div class="course-card-wrapper">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Intermediate</span>
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop" alt="Cloud Computing Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>AWS Cloud Computing Essentials</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">☁️</div>
+                                <span>by David Kim in Cloud Computing</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$219.00</span>
+                                    <span class="new-price">$69.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-6">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-6" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-6">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-6" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-6">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-6" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Course 7: Digital Marketing -->
+                <div class="course-card-wrapper" id="digital-marketing">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Beginner</span>
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Digital Marketing Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>Complete Digital Marketing Mastery</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">📈</div>
+                                <span>by Lisa Martinez in Digital Marketing</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$159.00</span>
+                                    <span class="new-price">$44.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-7">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-7" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-7">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-7" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-7">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-7" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Course 8: Music Promotion -->
+                <div class="course-card-wrapper">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Intermediate</span>
+                            <img src="Music Promotion & Digital Marketing.png" alt="Music Promotion Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>Music Promotion & Artist Branding</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">🎵</div>
+                                <span>by Marcus Williams in Music Industry</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$139.00</span>
+                                    <span class="new-price">$34.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-8">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-8" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-8">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-8" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-8">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-8" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Course 9: Social Media Growth -->
+                <div class="course-card-wrapper" id="social-media">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Beginner</span>
+                            <img src="Social Media Growth & Management.png" alt="Social Media Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>Social Media Growth, Management & Monetization</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">📱</div>
+                                <span>by Jessica Brown in Social Media</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$149.00</span>
+                                    <span class="new-price">$39.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-9">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-9" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-9">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-9" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-9">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-9" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Course 10: Influencer Marketing -->
+                <div class="course-card-wrapper">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Intermediate</span>
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop" alt="Influencer Marketing Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>Influencer Marketing Strategy & Campaigns</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">⭐</div>
+                                <span>by Amanda Foster in Influencer Marketing</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$169.00</span>
+                                    <span class="new-price">$49.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-10">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-10" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-10">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-10" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-10">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-10" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                 <!-- Course 11: AI Prompting -->
+                <div class="course-card-wrapper" id="ai-prompting">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <span class="course-badge">Advanced</span>
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="AI Prompting Course">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-rating">
+                                ⭐⭐⭐⭐⭐
+                            </div>
+                            <h3>AI Prompting & ChatGPT Mastery</h3>
+                            <div class="course-author">
+                                <div class="author-avatar">🤖</div>
+                                <span>by Dr. Ryan Cooper in AI Technology</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="old-price">$129.00</span>
+                                    <span class="new-price">$29.99</span>
+                                </div>
+                                <button class="add-to-cart enroll-btn">Enroll Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form-container">
+                        <form class="enrollment-form">
+                            <h4>Enroll Now</h4>
+                            <p>Complete this form and we'll connect you to enrollment support via WhatsApp.</p>
+                            <div class="form-group">
+                                <label for="fullname-11">Full Name</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="text" id="fullname-11" name="fullname" placeholder="Enter your full name" required>
+                                <span class="error-message">Please enter your full name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-11">Email</label>
+                                <!-- Added placeholder text for better UX -->
+                                <input type="email" id="email-11" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone-11">Phone Number (WhatsApp)</label>
+                                <input type="tel" id="phone-11" name="phone" value="+233532097722" required>
+                                <span class="error-message">Please enter a valid phone number</span>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="cancel-btn">Cancel</button>
+                                <button type="submit" class="confirm-btn">Confirm & Chat</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business and Tech News Section -->
+    <section class="blog" id="news">
+        <div class="container">
+            <h2 class="section-title">Business & Tech News</h2>
+            <div class="blog-grid">
+                <!-- News Article 1: AI Brainrot -->
+                <div class="blog-card" id="news-post-1">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4630ee79bab8?w=400&h=200&fit=crop" alt="AI Brainrot" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">October 24, 2025</div>
+                        <h3>Can AI companies turn 'brainrot' into revenue?</h3>
+                        <p class="blog-excerpt">OpenAI's new Sora app features a TikTok-style feed of AI-generated content, raising questions about monetization and content quality.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>The launch of OpenAI's Sora app, a TikTok-style feed of AI-generated content, has sparked debate. While the technology is impressive, the challenge remains for AI companies to monetize this content effectively without succumbing to the 'brainrot' effect of low-quality, endless scrolling. The industry is watching closely to see if a sustainable business model can emerge from this new form of media consumption.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="news-post-1">Read More →</button>
+                    </div>
+                </div>
+
+                <!-- News Article 2: Rivian Layoffs -->
+                <div class="blog-card" id="news-post-2">
+                    <img src="https://images.unsplash.com/photo-1621980838965-985651d65019?w=400&h=200&fit=crop" alt="Rivian Layoffs" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">October 23, 2025</div>
+                        <h3>Rivian reportedly cutting 600 workers in third layoff of the year</h3>
+                        <p class="blog-excerpt">The electric vehicle manufacturer is undergoing its third round of job cuts this year as it navigates a challenging economic landscape.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>Rivian, the electric vehicle startup, is reportedly implementing its third round of layoffs this year, affecting approximately 600 employees. This move underscores the broader difficulties facing the EV market, including supply chain issues and slower-than-anticipated consumer adoption. The company is focusing on efficiency and streamlining operations to achieve profitability.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="news-post-2">Read More →</button>
+                    </div>
+                </div>
+
+                <!-- News Article 3: Microsoft AI Browser -->
+                <div class="blog-card" id="news-post-3">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=200&fit=crop" alt="Microsoft AI Browser" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">October 22, 2025</div>
+                        <h3>Microsoft relaunches a nearly identical AI browser</h3>
+                        <p class="blog-excerpt">Just two days after OpenAI's Atlas launch, Microsoft has quickly rolled out its own AI-powered browser with strikingly similar features.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>The competition in the AI browser space is heating up. Following the release of OpenAI's Atlas, Microsoft has relaunched its browser with a heavy emphasis on AI integration. The new version boasts features that are almost identical to its competitor, signaling an aggressive push to dominate the next generation of web browsing technology and integrate AI directly into the user experience.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="news-post-3">Read More →</button>
+                    </div>
+                </div>
+
+                <!-- News Article 4: OpenAI buys Sky -->
+                <div class="blog-card" id="news-post-4">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=200&fit=crop" alt="OpenAI buys Sky" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">October 21, 2025</div>
+                        <h3>OpenAI buys Sky, an AI interface for Mac</h3>
+                        <p class="blog-excerpt">OpenAI has acquired Sky, a popular AI interface tool for macOS, to bolster its presence in the desktop application market.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>In a strategic move to expand its ecosystem, OpenAI has acquired Sky, a well-regarded AI interface application for Mac users. This acquisition suggests a focus on integrating AI capabilities deeper into personal computing environments, moving beyond web-based and mobile applications. The move is expected to bring advanced AI features directly to the macOS desktop.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="news-post-4">Read More →</button>
+                    </div>
+                </div>
+
+                <!-- News Article 5: LangChain Valuation -->
+                <div class="blog-card" id="news-post-5">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop" alt="LangChain Valuation" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">October 20, 2025</div>
+                        <h3>Open source agentic startup LangChain hits $1.25B valuation</h3>
+                        <p class="blog-excerpt">The startup focused on building applications with large language models has achieved unicorn status with its latest funding round.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>LangChain, a prominent open-source project and startup in the agentic AI space, has secured a new funding round that pushes its valuation to $1.25 billion, officially making it a unicorn. The company is instrumental in helping developers build complex applications that leverage large language models, highlighting the continued investor confidence in the infrastructure layer of the AI boom.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="news-post-5">Read More →</button>
+                    </div>
+                </div>
+
+                <!-- News Article 6: F-150 Lightning Halt -->
+                <div class="blog-card" id="news-post-6">
+                    <img src="https://images.unsplash.com/photo-1621980838965-985651d65019?w=400&h=200&fit=crop" alt="F-150 Lightning" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">October 19, 2025</div>
+                        <h3>Ford isn’t going to make more F-150 Lightnings for a while</h3>
+                        <p class="blog-excerpt">Ford has announced a halt in the production of its electric F-150 Lightning truck due to market adjustments and inventory levels.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>In a significant shift, Ford has decided to temporarily halt the production of the F-150 Lightning electric pickup. The decision is attributed to a need to align production with current market demand and to manage existing inventory. This move reflects the broader challenges in the electric vehicle transition, where manufacturers are adjusting their strategies to meet the evolving pace of consumer adoption.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="news-post-6">Read More →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog" style="margin-top: 80px;">
+        <div class="container">
+            <h2 class="section-title">Latest From Our Blog</h2>
+            <div class="blog-grid">
+                <div class="blog-card" id="blog-post-1">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400&h=200&fit=crop" alt="Blog post" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">January 15, 2025</div>
+                        <h3>10 Tips for Learning Web Development in 2025</h3>
+                        <p class="blog-excerpt">Discover the most effective strategies to master web development and stay ahead in the ever-evolving tech landscape.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>Master these essential tips to accelerate your web development journey. Learn about responsive design principles, modern JavaScript frameworks, and best practices for building scalable applications. Understand the importance of version control with Git, testing methodologies, and how to stay updated with the rapidly evolving web technologies. Explore resources for continuous learning and networking with other developers in the community.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="blog-post-1">Read More →</button>
+                    </div>
+                </div>
+                <div class="blog-card" id="blog-post-2">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=200&fit=crop" alt="Blog post" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">January 12, 2025</div>
+                        <h3>The Future of AI in Education</h3>
+                        <p class="blog-excerpt">Explore how artificial intelligence is transforming the way we learn and teach in modern educational institutions.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>Artificial intelligence is revolutionizing education through personalized learning paths, intelligent tutoring systems, and automated assessment tools. Discover how AI-powered platforms can adapt to individual student needs, provide real-time feedback, and help educators identify struggling students early. Explore the ethical considerations, challenges in implementation, and the future of AI-enhanced classrooms that combine human expertise with machine intelligence.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="blog-post-2">Read More →</button>
+                    </div>
+                </div>
+                <div class="blog-card" id="blog-post-3">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop" alt="Blog post" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">January 8, 2025</div>
+                        <h3>Building Your First Mobile App: A Beginner's Guide</h3>
+                        <p class="blog-excerpt">Step-by-step guide to creating your first mobile application using modern development frameworks and tools.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>Start your mobile app development journey with this comprehensive guide. Learn the differences between native and cross-platform development approaches, set up your development environment, and choose the right framework for your project. Follow practical examples using popular tools like React Native, Flutter, or native Swift/Kotlin. Understand the app development lifecycle from ideation to deployment on the App Store and Google Play Store.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="blog-post-3">Read More →</button>
+                    </div>
+                </div>
+                <div class="blog-card" id="blog-post-4">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=200&fit=crop" alt="Blog post" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">February 20, 2025</div>
+                        <h3>The Rise of Low-Code/No-Code Platforms</h3>
+                        <p class="blog-excerpt">Explore how low-code and no-code tools are democratizing software development and enabling non-programmers to build powerful applications.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>Low-code and no-code platforms are changing the landscape of application development. This post dives into the benefits, popular tools, and use cases for these platforms, showing how they accelerate development cycles and empower citizen developers. We also discuss the limitations and when traditional coding is still the better approach for complex or highly customized projects.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="blog-post-4">Read More →</button>
+                    </div>
+                </div>
+                <div class="blog-card" id="blog-post-5">
+                    <img src="https://images.unsplash.com/photo-1581403460835-37b01d71c4c1?w=400&h=200&fit=crop" alt="Blog post" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">February 15, 2025</div>
+                        <h3>Mastering Git and GitHub for Collaborative Coding</h3>
+                        <p class="blog-excerpt">A comprehensive guide on using version control with Git and GitHub to manage projects, collaborate effectively, and track changes in your code.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>Version control is a non-negotiable skill for modern developers. This article walks you through the fundamentals of Git, including staging, committing, branching, and merging. We then explore how to leverage GitHub for remote collaboration, pull requests, and code reviews, making your team's workflow seamless and error-free.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="blog-post-5">Read More →</button>
+                    </div>
+                </div>
+                <div class="blog-card" id="blog-post-6">
+                    <img src="https://images.unsplash.com/photo-1531403009941-28956972750e?w=400&h=200&fit=crop" alt="Blog post" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">February 10, 2025</div>
+                        <h3>Essential Soft Skills for a Successful Tech Career</h3>
+                        <p class="blog-excerpt">Beyond coding, discover the critical communication, problem-solving, and teamwork skills you need to thrive in the competitive tech industry.</p>
+                        <div class="blog-full-text" style="display: none; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out;">
+                            <p>While technical proficiency is essential, soft skills often determine long-term success. This post highlights the most valuable non-technical skills in the tech world, such as effective communication, critical thinking, adaptability, and emotional intelligence. Developing these skills will not only make you a better team member but also open doors to leadership opportunities.</p>
+                        </div>
+                        <button class="read-more-btn" data-post-id="blog-post-6">Read More →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info-section">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">📧</div>
+                        <div class="contact-info-text">
+                            <h4>Email</h4>
+                            <p>gasconytech@gmail.com</p>
+                            <p>support@gasconygh.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">📞</div>
+                        <div class="contact-info-text">
+                            <h4>Phone</h4>
+                            <p>+233 532 097 722</p>
+                            <p>+233 (593) 380-651</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">📍</div>
+                        <div class="contact-info-text">
+                            <h4>Address</h4>
+                            <p>123 Tech Street, Digital City</p>
+                            <p>Accra, Ghana</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">🕒</div>
+                        <div class="contact-info-text">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-section">
+                    <h3>Send Us A Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" placeholder="What is this about?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section class="privacy" id="privacy">
+        <div class="container">
+            <h2 class="section-title">Privacy Policy</h2>
+            <div class="privacy-content">
+                <p><strong>Last Updated: January 2025</strong></p>
+                
+                <h3>1. Information We Collect</h3>
+                <p>At Gascony Gh Tech Course, we collect information that you provide directly to us when you:</p>
+                <ul>
+                    <li>Register for an account or enroll in a course</li>
+                    <li>Complete forms or surveys</li>
+                    <li>Communicate with us via email or other channels</li>
+                    <li>Participate in interactive features of our services</li>
+                </ul>
+
+                <h3>2. How We Use Your Information</h3>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Provide, maintain, and improve our educational services</li>
+                    <li>Process your enrollment and manage your account</li>
+                    <li>Send you course updates, newsletters, and promotional materials</li>
+                    <li>Respond to your comments, questions, and customer service requests</li>
+                    <li>Monitor and analyze trends, usage, and activities</li>
+                </ul>
+
+                <h3>3. Information Sharing</h3>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+                <ul>
+                    <li>With your consent or at your direction</li>
+                    <li>With service providers who perform services on our behalf</li>
+                    <li>To comply with legal obligations or protect our rights</li>
+                </ul>
+
+                <h3>4. Data Security</h3>
+                <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+                <h3>5. Your Rights</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access and receive a copy of your personal data</li>
+                    <li>Correct inaccurate or incomplete information</li>
+                    <li>Request deletion of your personal information</li>
+                    <li>Opt-out of marketing communications</li>
+                </ul>
+
+                <h3>6. Cookies</h3>
+                <p>We use cookies and similar tracking technologies to track activity on our website and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
+
+                <h3>7. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                <p>Email: privacy@gasconygh.com<br>Phone: +233 532 097 722</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I enroll in a course?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Enrolling in a course is simple! Browse our course catalog, select the course you're interested in, and click the "Enroll Now" button. Fill out the enrollment form with your details, and our team will contact you via WhatsApp to complete the registration process. You'll receive instant access to the course materials once your enrollment is confirmed.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I access courses offline?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Once enrolled, you can download course materials including video lectures, PDFs, and resources for offline viewing. Our mobile app also supports offline mode, allowing you to learn on-the-go without an internet connection. However, interactive features like live sessions and quizzes require an active internet connection.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept multiple payment methods for your convenience including credit/debit cards (Visa, Mastercard, American Express), mobile money (MTN, Vodafone, AirtelTigo), bank transfers, and PayPal. All transactions are secured with industry-standard encryption. Payment plans and installment options are also available for select courses.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer certificates upon completion?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Upon successful completion of a course, you'll receive a verified digital certificate that you can share on LinkedIn, add to your resume, or showcase in your professional portfolio. Our certificates are recognized by industry leaders and include a unique verification code that employers can use to confirm your achievement.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I get a refund if I'm not satisfied?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day money-back guarantee on all our courses. If you're not completely satisfied with your learning experience within the first 30 days of enrollment, simply contact our support team and we'll process a full refund, no questions asked. Your satisfaction is our priority!</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long do I have access to the course materials?</h3>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once you enroll in a course, you get lifetime access to all course materials! This includes all future updates, new content additions, and improvements to the course. You can learn at your own pace and revisit the materials anytime you need a refresher. There are no time limits or expiration dates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Join Us Section -->
+    <section class="join-us" id="join-us">
+        <div class="container">
+            <!-- Updated section title to "Join My Channels" -->
+            <h2 class="section-title">Join My Channels</h2>
+            <p class="join-us-description">Stay connected with us! Join our WhatsApp and Telegram channels for exclusive updates, course announcements, tips, and direct support from our team.</p>
+            
+            <div class="join-us-buttons">
+                <!-- WhatsApp Button -->
+                <!-- Updated WhatsApp channel link to the correct URL -->
+                <a href="https://wa.me/233532097722" target="_blank" rel="noopener noreferrer" class="join-btn whatsapp-btn">
+                    <svg class="join-btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    <span>Join WhatsApp Channel</span>
+                </a> 
+                
+                    <a href="https://t.me/+8Texr3m-Z_ViNjRk" target="_blank" rel="noopener noreferrer" class="join-btn telegram-btn">
+                    <svg class="join-btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.944 0A12 12 0 0 0 0 12 12 12 0 0 0 12 12 12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    <span>Join Telegram Channel</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+     Footer 
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                 About Section 
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"><img src="GasconyGhTechlogo.png" alt="Gascony Gh Tech Course Logo"></div>
+                        <div class="footer-logo-text">
+                            <div class="footer-logo-main">Gascony Gh</div>
+                            <div class="footer-logo-sub">Tech Course</div>
+                        </div>
+                    </div>
+                    <p>Empowering learners worldwide with cutting-edge tech education and skills for the digital future.</p>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@gasconyghtech?_r=1&_d=dmc38j6ch0g765..." target="_blank" rel="noopener noreferrer" class="social-link tiktok-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/GasconyGhTech" target="_blank" rel="noopener noreferrer" class="social-link facebook-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link twitter-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/gasconyghtech/" target="_blank" rel="noopener noreferrer" class="social-link instagram-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link linkedin-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@gasconyghtech?si=-bwPK_1u3G1SXrbh" target="_blank" rel="noopener noreferrer" class="social-link youtube-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                 Quick Links 
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#course">Courses</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                 Popular Courses 
+                <div class="footer-section">
+                    <h3>Popular Courses</h3>
+                    <ul class="footer-links">
+                        <li><a href="#web-dev">Web Development</a></li>
+                        <li><a href="#python">Python Programming</a></li>
+                        <li><a href="#data-science">Data Science</a></li>
+                        <li><a href="#digital-marketing">Digital Marketing</a></li>
+                        <li><a href="#ai-prompting">AI Prompting</a></li>
+                        <li><a href="#social-media">Social Media Growth</a></li>
+                    </ul>
+                </div>
+
+                 Contact & Newsletter 
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <span>gasconytech@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <span>+233 (532) 097-722</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <span>123 Tech Street, Digital City</span>
+                        </div>
+                    </div>
+                    <h3 style="margin-top: 25px;">Newsletter</h3>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                        <button type="submit" class="newsletter-btn">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 <a href="#home">Gascony Gh Tech Course</a>. All rights reserved. | Designed with ❤️ for learners worldwide</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Added floating WhatsApp chat button -->
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/233532097722?text=Hello%20%F0%9F%91%8B%20I%20need%20help%20with%20my%20course%20or%20project." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path fill="currentColor" d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.957 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62c0 7.51-6.11 13.62-13.62 13.62zM21.305 19.26c-0.346-0.174-2.049-1.007-2.366-1.123-0.316-0.117-0.547-0.174-0.776 0.174s-0.892 1.123-1.094 1.347c-0.201 0.224-0.402 0.251-0.748 0.076-0.346-0.174-1.461-0.539-2.785-1.722-1.031-0.922-1.727-2.061-1.929-2.407-0.201-0.346-0.022-0.533 0.152-0.707 0.156-0.155 0.346-0.402 0.518-0.603 0.174-0.201 0.231-0.346 0.346-0.571 0.117-0.224 0.058-0.427-0.028-0.603s-0.776-1.87-1.063-2.565c-0.28-0.672-0.56-0.58-0.776-0.591-0.201-0.010-0.431-0.012-0.661-0.012s-0.603 0.085-0.92 0.427c-0.316 0.346-1.206 1.179-1.206 2.873s1.235 3.333 1.406 3.561c0.174 0.224 2.425 3.732 5.872 5.234 0.821 0.354 1.462 0.566 1.962 0.724 0.825 0.262 1.577 0.225 2.168 0.137 0.661-0.099 2.049-0.835 2.335-1.642 0.288-0.807 0.288-1.501 0.201-1.642-0.086-0.14-0.316-0.224-0.662-0.398z"/>
+        </svg>
+    </a>
+
+    <!-- Added mobile menu overlay -->
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">×</button>
+        <nav class="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#course">Course</a>
+            <a href="#ebook">E-Book</a>
+            <a href="#news">Tech News</a>
+            
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#privacy">Privacy & Policy</a>
+        </nav>
+        <div class="mobile-menu-icons">
+            <div class="cart-icon">
+                🛒
+                <span class="cart-badge" id="mobileCartBadge">0</span>
+            </div>
+            <div class="user-icon">👤</div>
+        </div>
+    </div>
+
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById("darkModeToggle")
+        const body = document.body
+
+        // Check for saved dark mode preference, default to dark mode
+        const savedTheme = localStorage.getItem("theme")
+        if (savedTheme === "light") {
+            body.classList.remove("dark-mode")
+        } else {
+            // Default to dark mode
+            body.classList.add("dark-mode")
+            localStorage.setItem("theme", "dark")
+        }
+
+        darkModeToggle.addEventListener("click", () => {
+            body.classList.toggle("dark-mode")
+
+            // Save preference
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark")
+            } else {
+                localStorage.setItem("theme", "light")
+            }
+        })
+
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById("hamburger")
+        const mobileMenu = document.getElementById("mobileMenu")
+        const mobileMenuOverlay = document.getElementById("mobileMenuOverlay")
+        const mobileMenuClose = document.getElementById("mobileMenuClose")
+        const mobileCartBadge = document.getElementById("mobileCartBadge")
+
+        function openMobileMenu() {
+            hamburger.classList.add("active")
+            mobileMenu.classList.add("active")
+            mobileMenuOverlay.classList.add("active")
+            document.body.style.overflow = "hidden" // Prevent scrolling when menu is open
+        }
+
+        function closeMobileMenu() {
+            hamburger.classList.remove("active")
+            mobileMenu.classList.remove("active")
+            mobileMenuOverlay.classList.remove("active")
+            document.body.style.overflow = "" // Restore scrolling
+        }
+
+        hamburger.addEventListener("click", () => {
+            if (mobileMenu.classList.contains("active")) {
+                closeMobileMenu()
+            } else {
+                openMobileMenu()
+            }
+        })
+
+        mobileMenuClose.addEventListener("click", closeMobileMenu)
+        mobileMenuOverlay.addEventListener("click", closeMobileMenu)
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll(".mobile-menu nav a").forEach(link => {
+            link.addEventListener("click", () => {
+                closeMobileMenu()
+            })
+        })
+
+        // Add to Cart Functionality (Placeholder - now primarily for badges)
+        const addToCartBtns = document.querySelectorAll(".add-to-cart") // Still targeting for badge update logic
+        const cartBadge = document.getElementById("cartBadge")
+        let cartCount = 0 // Initialize cart count
+
+        // Initial badge update from localStorage if available (optional)
+        const savedCartCount = localStorage.getItem("cartCount");
+        if (savedCartCount) {
+            cartCount = parseInt(savedCartCount, 10);
+            updateCartBadges(cartCount);
+        }
+
+        function updateCartBadges(count) {
+            cartBadge.textContent = count
+            mobileCartBadge.textContent = count
+            localStorage.setItem("cartCount", count.toString()); // Save count
+        }
+
+        // The main "add to cart" logic is replaced by enrollment form behavior now.
+        // This section keeps the badge update logic and potentially could be used for
+        // a separate "add to cart" if needed in the future.
+        // For now, it's largely a placeholder for badge updates.
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll("nav a, .mobile-nav a").forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault()
+                const targetId = this.getAttribute("href")
+                if (targetId.startsWith("#")) {
+                    const targetSection = document.querySelector(targetId)
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        })
+                    }
+                }
+            })
+        })
+
+        // Scroll Animation for Feature Cards
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: "0px 0px -100px 0px",
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = "fadeInUp 0.6s ease-out forwards"
+                }
+            })
+        }, observerOptions)
+
+        document.querySelectorAll(".feature-card, .testimonial-card").forEach((card) => {
+            observer.observe(card)
+        })
+
+        // Newsletter Form Submission
+        const newsletterForm = document.getElementById("newsletterForm")
+        if (newsletterForm) { // Check if the element exists
+            newsletterForm.addEventListener("submit", (e) => {
+                e.preventDefault()
+                const emailInput = newsletterForm.querySelector(".newsletter-input")
+                const submitBtn = newsletterForm.querySelector(".newsletter-btn")
+                
+                // Show success message
+                const originalBtnText = submitBtn.textContent
+                submitBtn.textContent = "✓ Subscribed!"
+                submitBtn.style.backgroundColor = "#4caf50"
+                
+                setTimeout(() => {
+                    submitBtn.textContent = originalBtnText
+                    submitBtn.style.backgroundColor = ""
+                    emailInput.value = ""
+                }, 2000)
+            })
+        }
+
+        // Dashboard Navigation
+        const dashboardSection = document.getElementById('dashboardSection');
+        const allSections = document.querySelectorAll('section'); // Select all sections
+        const ebookSection = document.getElementById('ebookSection'); // Get the E-Book section
+        
+        // Handle navigation clicks for the dashboard link
+        document.querySelectorAll('a[href="#dashboard"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Hide all other sections
+                allSections.forEach(section => {
+                    if (section.id !== 'dashboardSection' && section.id !== 'ebookSection') {
+                         section.style.display = 'none';
+                    } else if (section.id === 'ebookSection') {
+                        section.classList.remove('active');
+                        section.style.display = 'none';
+                    }
+                });
+                // Show dashboard
+                dashboardSection.classList.add('active');
+                dashboardSection.style.display = 'block';
+                // Close mobile menu if open
+                if (mobileMenu.classList.contains('active')) {
+                    closeMobileMenu();
+                }
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        // Handle navigation clicks for the home link
+        document.querySelectorAll('a[href="#home"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Show all other sections
+                allSections.forEach(section => {
+                    if (section.id !== 'dashboardSection' && section.id !== 'ebookSection') {
+                         section.style.display = 'block';
+                    } else if (section.id === 'dashboardSection') {
+                        section.classList.remove('active');
+                        section.style.display = 'none';
+                    } else if (section.id === 'ebookSection') {
+                        section.classList.remove('active');
+                        section.style.display = 'none';
+                    }
+                });
+                // Close mobile menu if open
+                if (mobileMenu.classList.contains('active')) {
+                    closeMobileMenu();
+                }
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        // E-Book Section Navigation
+        // Handle navigation clicks for the E-Book link
+        document.querySelectorAll('a[href="#ebook"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                console.log('[v0] E-Book/Quiz link clicked');
+                
+                // Hide all other sections
+                allSections.forEach(section => {
+                     // Check if section is not dashboard or ebook section before hiding
+                    if (section.id !== 'dashboardSection') {
+                         section.style.display = 'none';
+                    }
+                });
+                // Hide dashboard
+                dashboardSection.classList.remove('active');
+                dashboardSection.style.display = 'none';
+                
+                // Show E-Book/Quiz section with smooth transition
+                ebookSection.classList.add('active');
+                ebookSection.style.display = 'block';
+                console.log('[v0] Quiz section should now be visible');
+                console.log('[v0] Quiz section classes:', ebookSection.className);
+                console.log('[v0] Quiz section display:', window.getComputedStyle(ebookSection).display);
+                
+                // Close mobile menu if open
+                if (mobileMenu.classList.contains('active')) {
+                    closeMobileMenu();
+                }
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+        // Update other navigation links to hide E-Book section
+        document.querySelectorAll('a:not([href="#ebook"]):not([href="#dashboard"]):not([href="#home"])').forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Hide E-book section if it was active
+                if (ebookSection.classList.contains('active')) {
+                    ebookSection.classList.remove('active');
+                    ebookSection.style.display = 'none';
+                }
+                // Show all other sections
+                allSections.forEach(section => {
+                    if (section.id !== 'ebookSection' && section.id !== 'dashboardSection') {
+                        section.style.display = 'block';
+                    } else if (section.id === 'dashboardSection') {
+                        section.classList.remove('active');
+                        section.style.display = 'none';
+                    }
+                });
+
+                // Close mobile menu if open
+                if (mobileMenu.classList.contains('active')) {
+                    closeMobileMenu();
+                }
+                
+                // Smooth scroll to the target section
+                const targetId = this.getAttribute("href");
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+
+
+        // Venn Diagram Tooltip Functionality
+        const vennCircles = document.querySelectorAll('.venn-circle');
+        const vennTooltip = document.getElementById('vennTooltip');
+
+        const skillData = {
+            technical: {
+                name: 'Technical Skills',
+                percentage: '45%',
+                courses: ['Web Dev', 'Python', 'Data Science', 'Cybersecurity'],
+                description: 'Strong foundation in programming and technical concepts'
+            },
+            creative: {
+                name: 'Creative Skills',
+                percentage: '30%',
+                courses: ['Digital Marketing', 'Music Promotion', 'AI Prompting'],
+                description: 'Creative thinking and content creation abilities'
+            },
+            business: {
+                name: 'Business Skills',
+                percentage: '25%',
+                courses: ['Social Media Management', 'Influencer Marketing'],
+                description: 'Business strategy and marketing expertise'
+            }
+        };
+
+        vennCircles.forEach(circle => {
+            circle.addEventListener('mouseenter', function(e) {
+                const skill = this.getAttribute('data-skill');
+                const data = skillData[skill];
+                
+                vennTooltip.innerHTML = `
+                    <strong>${data.name}</strong><br>
+                    ${data.percentage} of total skills<br>
+                    <small>${data.description}</small>
+                `;
+                vennTooltip.classList.add('active');
+            });
+
+            circle.addEventListener('mousemove', function(e) {
+                const rect = e.target.getBoundingClientRect();
+                vennTooltip.style.left = e.clientX + 15 + 'px';
+                vennTooltip.style.top = e.clientY + 15 + 'px';
+            });
+
+            circle.addEventListener('mouseleave', function() {
+                vennTooltip.classList.remove('active');
+            });
+        });
+
+        const enrollBtns = document.querySelectorAll(".enroll-btn")
+        const cancelBtns = document.querySelectorAll(".cancel-btn")
+        const enrollmentForms = document.querySelectorAll(".enrollment-form")
+
+        // Handle Enroll Now button clicks
+        enrollBtns.forEach((btn, index) => {
+            btn.addEventListener("click", (e) => {
+                e.preventDefault()
+                const wrapper = btn.closest(".course-card-wrapper")
+                const formContainer = wrapper.querySelector(".enrollment-form-container")
+                
+                // Close all other forms that are active
+                document.querySelectorAll(".enrollment-form-container.active").forEach(activeFormContainer => {
+                    if (activeFormContainer !== formContainer) {
+                        activeFormContainer.classList.remove("active")
+                    }
+                })
+                
+                // Toggle current form
+                formContainer.classList.toggle("active")
+                
+                // Scroll to form if opening
+                if (formContainer.classList.contains("active")) {
+                    setTimeout(() => {
+                        // Scroll to the top of the opened form container
+                        formContainer.scrollIntoView({ behavior: "smooth", block: "start" })
+                    }, 100) // Small delay to ensure form is visible before scrolling
+                }
+            })
+        })
+
+        // Handle Cancel button clicks
+        cancelBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const formContainer = btn.closest(".enrollment-form-container")
+                formContainer.classList.remove("active")
+            })
+        })
+
+        // Handle form submissions
+        enrollmentForms.forEach(form => {
+            form.addEventListener("submit", (e) => {
+                e.preventDefault()
+                
+                // Get form inputs
+                const fullnameInput = form.querySelector('input[name="fullname"]')
+                const emailInput = form.querySelector('input[name="email"]')
+                const phoneInput = form.querySelector('input[name="phone"]')
+                
+                // Reset error messages for all inputs within this form
+                form.querySelectorAll(".error-message").forEach(msg => {
+                    msg.style.display = "none"
+                })
+                
+                let isValid = true
+                
+                // Validate Full Name
+                if (!fullnameInput.value.trim()) {
+                    fullnameInput.nextElementSibling.style.display = "block"
+                    isValid = false
+                }
+                
+                // Validate Email
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+                if (!emailInput.value.trim() || !emailRegex.test(emailInput.value)) {
+                    emailInput.nextElementSibling.style.display = "block"
+                    isValid = false
+                }
+                
+                // Validate Phone
+                if (!phoneInput.value.trim()) {
+                    phoneInput.nextElementSibling.style.display = "block"
+                    isValid = false
+                }
+                
+                // If validation passes, open WhatsApp
+                if (isValid) {
+                    // Find the closest course card wrapper to get the course name
+                    const courseCardWrapper = form.closest(".course-card-wrapper")
+                    const courseName = courseCardWrapper ? courseCardWrapper.querySelector("h3").textContent : "a course";
+                    
+                    const message = `Hello, I'm interested in enrolling in ${courseName}. My name is ${fullnameInput.value} and my email is ${emailInput.value}.`
+                    const whatsappBaseURL = `https://wa.me/+233532097722` // Corrected phone number based on form input
+                    const whatsappURL = `${whatsappBaseURL}?text=${encodeURIComponent(message)}`
+                    
+                    // Open WhatsApp in a new tab
+                    window.open(whatsappURL, "_blank")
+                    
+                    // Reset form and close the container
+                    form.reset()
+                    // Reset phone number to default if it was modified and needs to be reset
+                    phoneInput.value = "+233532097722" 
+                    form.closest(".enrollment-form-container").classList.remove("active")
+                }
+            })
+        })
+
+        // Smooth scroll for all anchor links (including footer links)
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    
+                    // Skip if it's just "#" or points to the current page without a fragment
+                    if (targetId === '#' || targetId === window.location.pathname + window.location.search) return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        // Close mobile menu if open
+                        const mobileMenu = document.getElementById('mobileMenu');
+                        if (mobileMenu && mobileMenu.classList.contains('active')) {
+                            mobileMenu.classList.remove('active');
+                            document.body.style.overflow = ""; // Restore scrolling
+                        }
+                        
+                        // Smooth scroll to target
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Contact form submission handler
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('contact-name').value;
+                    const email = document.getElementById('contact-email').value;
+                    const subject = document.getElementById('contact-subject').value;
+                    const message = document.getElementById('contact-message').value;
+                    
+                    // Create WhatsApp message
+                    const whatsappMessage = `Hello! I'm ${name}.\n\nSubject: ${subject}\n\nMessage: ${message}\n\nEmail: ${email}`;
+                    const whatsappUrl = `https://wa.me/233532097722?text=${encodeURIComponent(whatsappMessage)}`;
+                    
+                    // Open WhatsApp
+                    window.open(whatsappUrl, '_blank');
+                    
+                    // Reset form
+                    contactForm.reset();
+                    alert('Thank you! We will redirect you to WhatsApp to continue the conversation.');
+                });
+            }
+
+            // Add highlight effect when navigating to a course from footer
+            document.querySelectorAll('.footer-links a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement && targetElement.classList.contains('course-card-wrapper')) {
+                        // Remove highlight from all courses
+                        document.querySelectorAll('.course-card-wrapper').forEach(card => {
+                            card.classList.remove('highlight');
+                        });
+                        
+                        // Add highlight to target course after scroll
+                        setTimeout(() => {
+                            targetElement.classList.add('highlight');
+                            
+                            // Remove highlight after animation
+                            setTimeout(() => {
+                                targetElement.classList.remove('highlight');
+                            }, 1000);
+                        }, 500);
+                    }
+                });
+            });
+
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Close other open items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+
+        // Quiz Functionality
+        const quizAnswers = {
+            q1: 'a',  // HTML = Hyper Text Markup Language
+            q2: 'false',  // JavaScript and Java are NOT the same
+            q3: 'b',  // CSS is used to style web pages
+            q4: 'true',  // CSS = Cascading Style Sheets
+            q5: 'a',  // // is used for single-line comments in JavaScript
+            q6: 'false',  // Python is interpreted, not compiled
+            q7: 'a',  // SQL = Structured Query Language
+            q8: 'true',  // Variables can store different types of data
+            q9: 'b',  // HTML is a markup language, not a programming language
+            q10: 'true',  // Arrays can store multiple values
+            q11: 'true',  // Functions allow code reuse and organization
+            q12: 'true',  // Loops execute code repeatedly
+            q13: 'true',  // DOM represents HTML as a tree structure
+            q14: 'true',  // Git is a version control system
+            q15: 'true',  // APIs allow software communication
+            q16: 'true',  // OOP uses classes and objects
+            q17: 'true',  // Database is organized data collection
+            q18: 'true',  // Debugging is identifying and fixing errors
+            q19: 'true',  // Responsive design works on all devices
+            q20: 'true'   // Recursion is a function calling itself
+        };
+
+        const quizQuestions = {
+            q1: 'What does HTML stand for?',
+            q2: 'JavaScript and Java are the same programming language.',
+            q3: 'Which of the following is used to style web pages?',
+            q4: 'CSS stands for Cascading Style Sheets.',
+            q5: 'Which symbol is used for single-line comments in JavaScript?',
+            q6: 'Python is a compiled programming language.',
+            q7: 'What does SQL stand for?',
+            q8: 'A variable in programming can store different types of data.',
+            q9: 'Which of these is NOT a programming language?',
+            q10: 'An array can store multiple values in a single variable.',
+            q11: 'Functions in programming allow you to reuse code and make it more organized.',
+            q12: 'A loop in programming is used to execute a block of code repeatedly.',
+            q13: 'The DOM (Document Object Model) represents the structure of an HTML document as a tree.',
+            q14: 'Git is a version control system used to track changes in code over time.',
+            q15: 'An API (Application Programming Interface) allows different software applications to communicate with each other.',
+            q16: 'Object-Oriented Programming (OOP) uses classes and objects to organize code.',
+            q17: 'A database is a collection of organized data that can be efficiently stored, retrieved, and managed.',
+            q18: 'Debugging is the process of identifying and fixing errors in code.',
+            q19: 'Responsive web design ensures that websites look good on all device sizes including mobile, tablet, and desktop.',
+            q20: 'Recursion is a programming technique where a function calls itself to solve a problem by breaking it into smaller subproblems.'
+        };
+
+        const correctAnswerText = {
+            q1: 'Hyper Text Markup Language',
+            q2: 'False',
+            q3: 'CSS',
+            q4: 'True',
+            q5: '//',
+            q6: 'False',
+            q7: 'Structured Query Language',
+            q8: 'True',
+            q9: 'HTML',
+            q10: 'True',
+            q11: 'True',
+            q12: 'True',
+            q13: 'True',
+            q14: 'True',
+            q15: 'True',
+            q16: 'True',
+            q17: 'True',
+            q18: 'True',
+            q19: 'True',
+            q20: 'True'
+        };
+
+        document.getElementById('submitQuiz').addEventListener('click', function() {
+            let score = 0;
+            let totalQuestions = Object.keys(quizAnswers).length;
+            let results = [];
+
+            // Check each answer
+            for (let question in quizAnswers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                const userAnswer = selectedAnswer ? selectedAnswer.value : null;
+                const userAnswerText = selectedAnswer ? selectedAnswer.nextElementSibling.textContent : 'Not answered';
+                const isCorrect = selectedAnswer && selectedAnswer.value === quizAnswers[question];
+                
+                if (isCorrect) {
+                    score++;
+                }
+
+                results.push({
+                    question: quizQuestions[question],
+                    correct: isCorrect,
+                    userAnswer: userAnswerText,
+                    correctAnswer: correctAnswerText[question],
+                    answered: selectedAnswer !== null
+                });
+            }
+
+            // Calculate percentage
+            const percentage = Math.round((score / totalQuestions) * 100);
+
+            // Hide quiz, show results
+            document.getElementById('quizContainer').style.display = 'none';
+            document.getElementById('quizResults').style.display = 'block';
+
+            // Display score
+            document.getElementById('scoreNumber').textContent = score;
+            document.getElementById('scorePercentage').textContent = percentage + '%';
+
+            // Display message based on score
+            let message = '';
+            if (percentage >= 90) {
+                message = 'Outstanding! You have excellent coding knowledge!';
+            } else if (percentage >= 70) {
+                message = 'Great job! You have a solid understanding of coding basics!';
+            } else if (percentage >= 50) {
+                message = 'Good effort! Keep learning and practicing!';
+            } else {
+                message = 'Keep studying! Review the basics and try again!';
+            }
+            document.getElementById('resultsMessage').textContent = message;
+
+            // Display breakdown with question text, user answer, and correct answer
+            const breakdownHTML = results.map((result, index) => `
+                <div class="result-item ${result.correct ? 'correct' : 'incorrect'}">
+                    <div class="result-icon">${result.correct ? '✓' : '✗'}</div>
+                    <div class="result-text">
+                        <div class="result-question"><strong>Question ${index + 1}:</strong> ${result.question}</div>
+                        <div class="result-answer">
+                            <div><strong>Your answer:</strong> ${result.userAnswer}</div>
+                            <div><strong>Correct answer:</strong> ${result.correctAnswer}</div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('resultsBreakdown').innerHTML = breakdownHTML;
+
+            // Scroll to top of results
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Retake quiz functionality
+        document.getElementById('retakeQuiz').addEventListener('click', function() {
+            // Reset all radio buttons
+            document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.checked = false;
+            });
+
+            // Hide results, show quiz
+            document.getElementById('quizResults').style.display = 'none';
+            document.getElementById('quizContainer').style.display = 'block';
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+
+        // Blog Expansion Functionality
+        document.querySelectorAll('.read-more-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const postId = this.getAttribute('data-post-id');
+                const blogCard = document.getElementById(postId);
+                const fullText = blogCard.querySelector('.blog-full-text');
+                const isExpanded = fullText.style.display !== 'none';
+                
+                if (isExpanded) {
+                    // Collapse
+                    fullText.style.maxHeight = '0';
+                    fullText.style.display = 'none';
+                    this.textContent = 'Read More →';
+                    this.classList.remove('expanded');
+                } else {
+                    // Expand
+                    fullText.style.display = 'block';
+                    fullText.style.maxHeight = fullText.scrollHeight + 'px';
+                    this.textContent = 'Read Less ←';
+                    this.classList.add('expanded');
+                    
+                    // Smooth scroll to the expanded content
+                    setTimeout(() => {
+                        fullText.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, 100);
+                }
+            });
+        });
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const learnMoreButtons = document.querySelectorAll('.learn-more-btn');
+
+            learnMoreButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const targetContent = document.getElementById(targetId);
+
+                    if (targetContent) {
+                        const isExpanded = targetContent.classList.contains('active');
+
+                        if (isExpanded) {
+                            // Collapse
+                            targetContent.style.maxHeight = targetContent.scrollHeight + 'px'; // Set current height before transition
+                            setTimeout(() => {
+                                targetContent.style.maxHeight = '0';
+                                targetContent.classList.remove('active');
+                            }, 10); // Small delay to ensure height is set
+                            
+                            this.classList.remove('expanded');
+                            this.innerHTML = 'LEARN MORE →';
+                        } else {
+                            // Expand
+                            targetContent.classList.add('active');
+                            targetContent.style.maxHeight = targetContent.scrollHeight + 'px';
+                            this.classList.add('expanded');
+                            this.innerHTML = 'SHOW LESS ↑';
+                            
+                            // After transition, set max-height to a safe large value
+                            targetContent.addEventListener('transitionend', function handler() {
+                                if (targetContent.classList.contains('active')) {
+                                    targetContent.style.maxHeight = '500px'; // Set to a safe large value
+                                }
+                                targetContent.removeEventListener('transitionend', handler);
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const getStartedBtn = document.getElementById('getStartedBtn');
+            const getStartedContent = document.getElementById('getStartedContent');
+
+            if (getStartedBtn && getStartedContent) {
+                getStartedBtn.addEventListener('click', () => {
+                    getStartedContent.classList.toggle('active');
+                    // Optional: Change button text/icon when expanded
+                    if (getStartedContent.classList.contains('active')) {
+                        getStartedBtn.textContent = 'HIDE OPTIONS';
+                    } else {
+                        getStartedBtn.textContent = 'GET STARTED';
+                    }
+                });
+            }
+        });
+    </script>
+
+    <!-- Learning Progress Chart Initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('learningProgressChart');
+            if (ctx) {
+                const isDarkMode = document.body.classList.contains('dark-mode');
+                const textColor = isDarkMode ? '#e0e0e0' : '#333333';
+                const gridColor = isDarkMode ? '#3a3a3a' : '#e0e0e0';
+                const backgroundColor = isDarkMode ? '#2a2a2a' : '#ffffff';
+
+                const learningProgressChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7', 'Week 8', 'Week 9', 'Week 10', 'Week 11', 'Week 12'],
+                        datasets: [
+                            {
+                                label: 'Course Progress (%)',
+                                data: [15, 25, 35, 42, 55, 62, 68, 72, 75, 78, 82, 85],
+                                borderColor: '#6b7ff5',
+                                backgroundColor: 'rgba(107, 127, 245, 0.1)',
+                                borderWidth: 3,
+                                fill: true,
+                                tension: 0.4,
+                                pointRadius: 5,
+                                pointBackgroundColor: '#6b7ff5',
+                                pointBorderColor: '#ffffff',
+                                pointBorderWidth: 2,
+                                pointHoverRadius: 7,
+                                pointHoverBackgroundColor: '#5a6ee5'
+                            },
+                            {
+                                label: 'Lessons Completed',
+                                data: [2, 4, 6, 8, 11, 14, 17, 20, 23, 26, 29, 32],
+                                borderColor: '#d4a574',
+                                backgroundColor: 'rgba(212, 165, 116, 0.1)',
+                                borderWidth: 3,
+                                fill: true,
+                                tension: 0.4,
+                                pointRadius: 5,
+                                pointBackgroundColor: '#d4a574',
+                                pointBorderColor: '#ffffff',
+                                pointBorderWidth: 2,
+                                pointHoverRadius: 7,
+                                pointHoverBackgroundColor: '#b8935f',
+                                yAxisID: 'y1'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top',
+                                labels: {
+                                    color: textColor,
+                                    font: {
+                                        size: 13,
+                                        weight: '500'
+                                    },
+                                    padding: 20,
+                                    usePointStyle: true,
+                                    pointStyle: 'circle'
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: isDarkMode ? 'rgba(255, 255, 255, 0.95)' : 'rgba(0, 0, 0, 0.9)',
+                                titleColor: isDarkMode ? '#1a1a1a' : '#ffffff',
+                                bodyColor: isDarkMode ? '#1a1a1a' : '#ffffff',
+                                borderColor: '#6b7ff5',
+                                borderWidth: 2,
+                                padding: 12,
+                                displayColors: true,
+                                callbacks: {
+                                    title: function(context) {
+                                        return context[0].label;
+                                    },
+                                    label: function(context) {
+                                        let label = context.dataset.label || '';
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        if (context.parsed.y !== null) {
+                                            label += context.dataset.label.includes('Progress') ? context.parsed.y + '%' : context.parsed.y;
+                                        }
+                                        return label;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                type: 'linear',
+                                display: true,
+                                position: 'left',
+                                title: {
+                                    display: true,
+                                    text: 'Progress (%)',
+                                    color: textColor,
+                                    font: {
+                                        size: 12,
+                                        weight: '500'
+                                    }
+                                },
+                                ticks: {
+                                    color: textColor,
+                                    font: {
+                                        size: 11
+                                    },
+                                    callback: function(value) {
+                                        return value + '%';
+                                    }
+                                },
+                                grid: {
+                                    color: gridColor,
+                                    drawBorder: false
+                                }
+                            },
+                            y1: {
+                                type: 'linear',
+                                display: true,
+                                position: 'right',
+                                title: {
+                                    display: true,
+                                    text: 'Lessons Completed',
+                                    color: textColor,
+                                    font: {
+                                        size: 12,
+                                        weight: '500'
+                                    }
+                                },
+                                ticks: {
+                                    color: textColor,
+                                    font: {
+                                        size: 11
+                                    }
+                                },
+                                grid: {
+                                    drawOnChartArea: false
+                                }
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Timeline',
+                                    color: textColor,
+                                    font: {
+                                        size: 12,
+                                        weight: '500'
+                                    }
+                                },
+                                ticks: {
+                                    color: textColor,
+                                    font: {
+                                        size: 11
+                                    }
+                                },
+                                grid: {
+                                    color: gridColor,
+                                    drawBorder: false
+                                }
+                            }
+                        }
+                    }
+                });
+
+                // Update chart colors when dark mode is toggled
+                const darkModeToggle = document.getElementById('darkModeToggle');
+                if (darkModeToggle) {
+                    darkModeToggle.addEventListener('click', function() {
+                        setTimeout(() => {
+                            const isDark = document.body.classList.contains('dark-mode');
+                            const newTextColor = isDark ? '#e0e0e0' : '#333333';
+                            const newGridColor = isDark ? '#3a3a3a' : '#e0e0e0';
+                            const newBgColor = isDark ? '#2a2a2a' : '#ffffff';
+
+                            learningProgressChart.options.plugins.legend.labels.color = newTextColor;
+                            learningProgressChart.options.plugins.tooltip.backgroundColor = isDark ? 'rgba(255, 255, 255, 0.95)' : 'rgba(0, 0, 0, 0.9)';
+                            learningProgressChart.options.plugins.tooltip.titleColor = isDark ? '#1a1a1a' : '#ffffff';
+                            learningProgressChart.options.plugins.tooltip.bodyColor = isDark ? '#1a1a1a' : '#ffffff';
+                            learningProgressChart.options.scales.y.title.color = newTextColor;
+                            learningProgressChart.options.scales.y.ticks.color = newTextColor;
+                            learningProgressChart.options.scales.y1.title.color = newTextColor;
+                            learningProgressChart.options.scales.y1.ticks.color = newTextColor;
+                            learningProgressChart.options.scales.x.title.color = newTextColor;
+                            learningProgressChart.options.scales.x.ticks.color = newTextColor;
+                            learningProgressChart.options.scales.y.grid.color = newGridColor;
+                            learningProgressChart.options.scales.x.grid.color = newGridColor;
+
+                            learningProgressChart.update();
+                        }, 100);
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+    <!-- Deferred Scripts for Better Performance -->
+    <!-- Chart.js for dashboard charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js" defer></script>
+    
+    <!-- Error Handler - Load First for Early Error Detection -->
+    <script src="error-handler.min.js"></script>
+    
+    <!-- Main Application Script - Deferred -->
+    <script src="script.min.js" defer></script>
+
+    <!-- Performance Monitoring Script -->
+    <script>
+        window.addEventListener('load', function() {
+            if (window.performance && window.performance.timing) {
+                const perf = window.performance.timing;
+                const pageLoadTime = perf.loadEventEnd - perf.navigationStart;
+                const connectTime = perf.responseEnd - perf.requestStart;
+                const renderTime = perf.domComplete - perf.domLoading;
+                console.log('Performance Metrics:', {
+                    'Page Load Time': pageLoadTime + 'ms',
+                    'Connect Time': connectTime + 'ms',
+                    'Render Time': renderTime + 'ms'
+                });
+            }
+        });
+    </script>
+</html>
